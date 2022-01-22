@@ -1,0 +1,41 @@
+<!-- <section class="tabs" style="-webkit-user-select: auto;">
+  <menu role="tablist" aria-label="Tabs Template" style="-webkit-user-select: auto;">
+    <button role="tab" class="tablinks" (click)="openCity($event, 'tabId0')" aria-controls="tab-A" aria-selected="false" style="-webkit-user-select: auto;">Tab A</button>
+    <button role="tab" class="tablinks" (click)="openCity($event, 'tabId1')" aria-controls="tab-B" aria-selected="false" style="-webkit-user-select: auto;">Tab B</button>
+    <button role="tab" class="tablinks" (click)="openCity($event, 'tabId2')" aria-controls="tab-C" aria-selected="false" style="-webkit-user-select: auto;">Tab C</button>
+    <button role="tab" class="tablinks" (click)="openCity($event, 'tabId3')" aria-controls="tab-D" aria-selected="false" style="-webkit-user-select: auto;">Tab D</button>
+  </menu>
+  <article  role="tabpanel" id="tabId0" class="tabcontent" style="-webkit-user-select: auto;">Tab A is active</article>
+  <article  role="tabpanel" id="tabId1" class="tabcontent" style="-webkit-user-select: auto;">Tab B is active</article>
+  <article  role="tabpanel" id="tabId2" class="tabcontent" style="-webkit-user-select: auto;">Tab C is active</article>
+  <article  role="tabpanel" id="tabId3" class="tabcontent" style="-webkit-user-select: auto;">Tab D is inactive</article>
+</section> -->
+
+
+<section class="tabs" style="-webkit-user-select: auto;">
+  <menu  role="tablist" aria-label="Tabs Template" style="-webkit-user-select: auto;">
+    <button *ngFor="let i of tabList" role="tab" class="tablinks" (click)="openCity($event, i.tabId)" aria-controls="tab-A" aria-selected="false" style="-webkit-user-select: auto;">{{i.tabName}}</button>
+  </menu>
+    <article *ngFor="let key of Object.keys(tabIdDict)"  role="tabpanel" id={{key}} class="tabcontent" style="-webkit-user-select: auto;">
+           <div *ngFor="let group of Object.keys(tabIdDict[key])">
+            <strong><p>{{group}}</p></strong>
+            <div *ngFor="let variable of Object.keys(tabIdDict[key][group])">
+            <p>{{variable}} : {{tabIdDict[key][group][variable]}}</p>
+            </div>
+           </div>
+    </article>
+</section>
+
+
+
+<!-- 
+    4 Hours 
+    - Write JS for Tabs Functionality -> Done
+    - TabList Display                 -> Done           
+    - Tabs Content Display
+        - Display Tabs Content with respective to their divs and tabs
+        - In those respective tabs display vars content under respective groups
+        - For all var values we need to check if value is null then we should not display if there is any value we should display.
+        - Push values from another dictionary to these var values.
+    - Verify whether the data comming from server is displaying or not in the original project.
+-->
