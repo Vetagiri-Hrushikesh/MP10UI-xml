@@ -1,0 +1,769 @@
+<ui>
+  <tab name="Software Revisions" style = "table">
+   <group name = "Primary ATP" location = "0,0">
+        <var name="CTtoPTU:Pri_ATPRevMajor" display="ATP Rev Major"/>
+        <var name="CTtoPTU:Pri_ATPRevMinor" display="ATP Rev Minor" />
+        <var name="CTtoPTU:Pri_ATPRevTest" display="ATP Rev Test" />
+        <var name="CTtoPTU:Pri_ATPRevUnused"  display="ATP Rev Unused" />
+    </group>
+
+   <group name = "Primary ATO" location = "0,1">
+        <var name="CTtoPTU:Pri_ATORevMajor" display="ATO Rev Major" />
+        <var name="CTtoPTU:Pri_ATORevMinor" display="ATO Rev Minor" />
+        <var name="CTtoPTU:Pri_ATORevTest" display="ATO Rev Test" />
+        <var name="CTtoPTU:Pri_ATORevUnused" display="ATO Rev Unused" />
+    </group>
+
+   <group name = "Primary CSRD" location = "0,2">
+        <var name="CTtoPTU:Pri_CSRDAppRevMajor" display="CSRD App Rev Maj" />
+        <var name="CTtoPTU:Pri_CSRDAppRevMinor" display="CSRD App Rev Min" />
+        <var name="CTtoPTU:Pri_CSRDAppRevTest" display="CSRD App Rev Test" />
+        <var name="CTtoPTU:Pri_CSRDAppRevUnused" display="CSRD App Rev Un" />
+
+        <var name="CTtoPTU:Pri_CSRDCfgRevMajor" display="CSRD Cfg Rev Maj" />
+        <var name="CTtoPTU:Pri_CSRDCfgRevMinor" display="CSRD Cfg Rev Min" />
+        <var name="CTtoPTU:Pri_CSRDCfgRevTest" display="CSRD Cfg Rev Test" />
+        <var name="CTtoPTU:Pri_CSRDCfgRevUnused" display="CSRD Cfg Rev Un" />
+
+        <var name="CTtoPTU:Pri_CSRDProjRevMajor" display="CSRD Proj Rev Maj" />
+        <var name="CTtoPTU:Pri_CSRDProjRevMinor" display="CSRD Proj Rev Min" />
+        <var name="CTtoPTU:Pri_CSRDProjRevTest" display="CSRD Proj Rev Test" />
+        <var name="CTtoPTU:Pri_CSRDProjRevUnused" display="CSRD Proj Rev Un" />
+   </group>
+   <group name = "Secondary ATP" location = "1,0">
+         <var name="CTtoPTU:Sec_ATPRevMajor" display="ATP Rev Major" />
+        <var name="CTtoPTU:Sec_ATPRevMinor" display="ATP Rev Minor" />
+        <var name="CTtoPTU:Sec_ATPRevTest" display="ATP Rev Test" />
+        <var name="CTtoPTU:Sec_ATPRevUnused"  display="ATP Rev Unused" />
+   </group>
+   <group name = "Secondary ATO" location = "1,1">
+        <var name="CTtoPTU:Sec_ATORevMajor" display="ATO Rev Major" />
+        <var name="CTtoPTU:Sec_ATORevMinor" display="ATO Rev Minor" />
+        <var name="CTtoPTU:Sec_ATORevTest" display="ATO Rev Test" />
+        <var name="CTtoPTU:Sec_ATORevUnused" display="ATO Rev Unused" />
+  </group>
+   <group name = "Secondary CSRD" location = "1,2">
+
+        <var name="CTtoPTU:Sec_CSRDAppRevMajor" display="CSRD App Rev Maj"  />
+        <var name="CTtoPTU:Sec_CSRDAppMinor" display="CSRD App Rev Min" />
+        <var name="CTtoPTU:Sec_CSRDAppRevTest" display="CSRD App Rev Test" />
+        <var name="CTtoPTU:Sec_CSRDAppRevUnused" display="CSRD App Rev Un" />
+
+        <var name="CTtoPTU:Sec_CSRDCfgRevMajor" display="CSRD Cfg Rev Maj" />
+        <var name="CTtoPTU:Sec_CSRDCfgRevMinor" display="CSRD Cfg Rev Min" />
+        <var name="CTtoPTU:Sec_CSRDCfgRevTest" display="CSRD Cfg Rev Test" />
+        <var name="CTtoPTU:Sec_CSRDCfgRevUnused" display="CSRD Cfg Rev Un" />
+
+        <var name="CTtoPTU:Sec_CSRDProjCfgRevMajor" display="CSRD Proj Rev Maj" />
+        <var name="CTtoPTU:Sec_CSRDProjCfgRevMinor" display="CSRD Proj Rev Min" />
+        <var name="CTtoPTU:Sec_CSRDProjCfgRevTest" display="CSRD Proj Rev Test" />
+        <var name="CTtoPTU:Sec_CSRDProjCfgRevUnused" display="CSRD Proj Rev Un" />
+   </group>
+   <group name = "SESAM" location = "0,3">
+      <var name="CTtoPTU:TCMS_CfgRevMajor" display="TCMS XML Rev Maj" />
+      <var name="CTtoPTU:TCMS_CfgRevMinor" display="TCMS XML Rev Min" />
+      <var name="CTtoPTU:TCMS_CfgRevTest" display="TCMS XML Rev Test" />
+      <var name="CTtoPTU:TCMS_CfgRevUnused"  display="TCMS XML Rev Un" />
+
+      <var name="CTtoPTU:SESAM_CfgRevMajor" display="SESAM XML Rev Maj" />
+      <var name="CTtoPTU:SESAM_CfgRevMinor" display="SESAM XML Rev Min" />
+      <var name="CTtoPTU:SESAM_CfgRevTest" display="SESAM XML Rev Test" />
+      <var name="CTtoPTU:SESAM_CfgRevUnused"  display="SESAM XML Rev Un" />
+   </group>
+ </tab>
+
+ <tab name="Discrete Inputs" style = "table">
+    <group name = "Primary Vital" location = "0,0">
+        <var name="CTtoPTU:Pri_RawAcab"     style="led" display="Raw Act Cab"  />
+        <var name="CTtoPTU:Pri_RawATOMode"  style="led" display="Raw ATO Mode" />
+        <var name="CTtoPTU:Pri_RawCMCmode"  style="led" display="Raw CMC Mode"/>
+        <var name="CTtoPTU:Pri_RawCMCwoCCV" style="led" display="Raw CMC no CCV"/>
+        <var name="CTtoPTU:Pri_RawCDMode"   style="led" display="Raw CD Mode"/>
+        <var name="CTtoPTU:Pri_RawTAmode"   style="led" display="Raw TA Mode" />
+        <var name="CTtoPTU:Pri_RawMCFwd"    style="led" display="Raw MC Fwd" />
+        <var name="CTtoPTU:Pri_RawMCRev"    style="led" display="Raw MC Rev" />
+
+        <var name="CTtoPTU:Pri_RawDAin"       style="led" display="Raw DA In" />
+        <var name="CTtoPTU:Pri_RawCancelSS"   style="led" display="Raw Cancel SS" />
+        <var name="CTtoPTU:Pri_RawDTA"        style="led" display="Raw DTA In" />
+        <var name="CTtoPTU:Pri_RawMC_trac"    style="led" display="Raw MC Trac"/>
+        <var name="CTtoPTU:Pri_RawMC_ntrac"   style="led" display="Raw MC Not Trac"/>
+        <var name="CTtoPTU:Pri_RawMC_Brake"   style="led" display="Raw MC Brake" />
+        <var name="CTtoPTU:Pri_vin1_bits15"   style="led" display="Vin 1 Bit 15"/>
+
+        <var name="CTtoPTU:Pri_RawMC_Deadman" style="led" display="Raw MC Deadman" />
+        <var name="CTtoPTU:Pri_RawADCL"       style="led" display="Raw All Doors Close Lock"/>
+        <var name="CTtoPTU:Pri_RawDoorAAuto"  style="led" display="Raw Door Auth Auto" />
+        <var name="CTtoPTU:Pri_RawDoorClose"  style="led" display="Raw Door Close Req" />
+        <var name="CTtoPTU:Pri_RawEBfbk"      style="led" display="Raw EB Fdbk" />
+        <var name="CTtoPTU:Pri_RawNoTracCut"  style="led" display="Raw No Trac Cut"/>
+        <var name="CTtoPTU:Pri_RawBA"         style="led" display="Raw BA Trainline"/>
+        <var name="CTtoPTU:Pri_RawQVM1Chk"    style="led" display="Raw QVM 1 Check"/>
+
+        <var name="CTtoPTU:Pri_RawQVM2Chk"   style="led" display="Raw QVM 2 Check" />
+        <var name="CTtoPTU:Pri_RawATCAlive"  style="led" display="Raw Other ATC Alive" />
+        <var name="CTtoPTU:Pri_RawATConline" style="led" display="Raw Other ATC Online" />
+        <var name="CTtoPTU:Pri_RawDoorAMan"  style="led" display="Raw Manual Door Mode" />
+        <var name="CTtoPTU:Pri_RawSpIN2"     style="led" display="Raw Spare 2 In" />
+        <var name="CTtoPTU:Pri_RawSpIN3"     style="led" display="Raw Spare 3 In" />
+        <var name="CTtoPTU:Pri_RawPri"       style="led" display="Raw Pri Ind" />
+        <var name="CTtoPTU:Pri_RawSec"       style="led" display="Raw Sec Ind" />
+    </group>
+
+    <group name = "Primary Multifunction" location = "0,1">
+        <var name="CTtoPTU:Pri_RawTREnBkCk"   style="led" display="Raw Tract En" />
+        <var name="CTtoPTU:Pri_RawRDoorEnBCk" style="led" display="Raw RDoor En" />
+        <var name="CTtoPTU:Pri_RawLDoorEnBCk" style="led" display="Raw LDoor En" />
+        <var name="CTtoPTU:Pri_RawNoDrEnBCk"  style="led" display="MFin Bit 3" />
+        <var name="CTtoPTU:Pri_RawBABckCk"    style="led" display="Raw BA Bck Ch" />
+        <var name="CTtoPTU:Pri_mfin_bits3"    style="led" display="Raw Inv Cut Bck Chk" />
+        <var name="CTtoPTU:Pri_mfin_bits7"    style="led" display="MFin Bit 7" />
+    </group>
+
+    <group name = "Secondary Vital" location = "1,0">
+        <var name="CTtoPTU:Sec_RawAcab"     style="led" display="Raw Act Cab"  />
+        <var name="CTtoPTU:Sec_RawATOMode"  style="led" display="Raw ATO Mode" />
+        <var name="CTtoPTU:Sec_RawCMCMode"  style="led" display="Raw CMC Mode"/>
+        <var name="CTtoPTU:Sec_RawCMCwoCCV" style="led" display="Raw CMC no CCV"/>
+        <var name="CTtoPTU:Sec_RawCDMode"   style="led" display="Raw CD Mode"/>
+        <var name="CTtoPTU:Sec_RawTAMode"   style="led" display="Raw TA Mode" />
+        <var name="CTtoPTU:Sec_RawMCFwd"    style="led" display="Raw MC Fwd" />
+        <var name="CTtoPTU:Sec_RawMCRev"    style="led" display="Raw MC Rev" />
+
+        <var name="CTtoPTU:Sec_RawDAin"       style="led" display="Raw DA In" />
+        <var name="CTtoPTU:Sec_RawCancelSS"   style="led" display="Raw Cancel SS" />
+        <var name="CTtoPTU:Sec_RawDTA"        style="led" display="Raw DTA In" />
+        <var name="CTtoPTU:Sec_RawMC_trac"    style="led" display="Raw MC Trac"/>
+        <var name="CTtoPTU:Sec_RawMC_ntrac"   style="led" display="Raw MC Not Trac"/>
+        <var name="CTtoPTU:Sec_RawMC_brake"   style="led" display="Raw MC Brake" />
+        <var name="CTtoPTU:Sec_vin1_bits15"   style="led" display="Vin 1 Bit 15"/>
+
+        <var name="CTtoPTU:Sec_RawMC_Deadman" style="led" display="Raw MC Deadman" />
+        <var name="CTtoPTU:Sec_RawADCL"       style="led" display="Raw All Doors Close Lock"/>
+        <var name="CTtoPTU:Sec_RawDoorAAuto"  style="led" display="Raw Door Auth Auto" />
+        <var name="CTtoPTU:Sec_RawDoorClose"  style="led" display="Raw Door Close Req" />
+        <var name="CTtoPTU:Sec_RawEBfbk"      style="led" display="Raw EB Fdbk" />
+        <var name="CTtoPTU:Sec_RawNoTracCut"  style="led" display="Raw No Trac Cut"/>
+        <var name="CTtoPTU:Sec_RawBA"         style="led" display="Raw BA Trainline"/>
+        <var name="CTtoPTU:Sec_RawQVM1Chk"    style="led" display="Raw QVM 1 Check"/>
+
+        <var name="CTtoPTU:Sec_RawQVM2Chk"   style="led" display="Raw QVM 2 Check" />
+        <var name="CTtoPTU:Sec_RawATCAlive"  style="led" display="Raw Other ATC Alive" />
+        <var name="CTtoPTU:Sec_RawATConline" style="led" display="Raw Other ATC Online" />
+        <var name="CTtoPTU:Sec_RawDoorAMan"  style="led" display="Raw Manual Door Mode" />
+        <var name="CTtoPTU:Sec_RawSpIN2"     style="led" display="Raw Spare 2 In" />
+        <var name="CTtoPTU:Sec_RawSpIN3"     style="led" display="Raw Spare 3 In" />
+        <var name="CTtoPTU:Sec_RawPri"       style="led" display="Raw Pri Ind" />
+        <var name="CTtoPTU:Sec_RawSec"       style="led" display="Raw Sec Ind" />
+    </group>
+
+    <group name = "Secondary Multifunction" location = "1,1">
+        <var name="CTtoPTU:Sec_RawTREnBkCk"   style="led" display="Raw Tract En" />
+        <var name="CTtoPTU:Sec_RawRDoorEnBCk" style="led" display="Raw RDoor En" />
+        <var name="CTtoPTU:Sec_RawLDoorEnBCk" style="led" display="Raw LDoor En" />
+        <var name="CTtoPTU:Sec_RawNoDrEnBCk"  style="led" display="MFin Bit 3" />
+        <var name="CTtoPTU:Sec_RawBABckCk"    style="led" display="Raw BA Bck Ch" />
+        <var name="CTtoPTU:Sec_mfin_bits3"    style="led" display="Raw Inv Cut Bck Chk" />
+        <var name="CTtoPTU:Sec_mfin_bits7"    style="led" display="MFin Bit 7" />
+    </group>
+  </tab>
+    <!-- Section 11 -->
+    <tab name="Discrete Outputs" style = "table">
+    <group name = "Primary Vital" location = "0,0">
+        <var name="CTtoPTU:Pri_RawEB"         style="led" display="Raw EB Request" />
+        <var name="CTtoPTU:Pri_RawVzero"      style="led" display="Raw VZero" />
+        <var name="CTtoPTU:Pri_RawTracEn"     style="led" display= "Raw Trac Enable" />
+        <var name="CTtoPTU:Pri_RawLdoorEn"    style="led" display="Raw RDoor En" />
+        <var name="CTtoPTU:Pri_RawRdoorEn"    style="led" display="Raw LDoor En" />
+        <var name="CTtoPTU:Pri_RawNoDrEnByps" style="led" display="Raw No Door Bypass" />
+        <var name="CTtoPTU:Pri_RawBAOut"      style="led" display="Raw BA Out" />
+    </group>
+
+    <group name = "Primary non-Vital" location = "0,1">
+        <var name="CTtoPTU:Pri_RawQVMCtrl1"   style="led" display="Raw QVM 1 Control" />
+        <var name="CTtoPTU:Pri_RawQVMCtrl2"   style="led" display="Raw QVM 2 Control" />
+        <var name="CTtoPTU:Pri_nvout_bits2"   style="led" display="NVout Bit 2" />
+        <var name="CTtoPTU:Pri_nvout_bits3"   style="led" display="NVout Bit 3" />
+        <var name="CTtoPTU:Pri_nvout_bits4"   style="led" display="NVout Bit 4" />
+        <var name="CTtoPTU:Pri_nvout_bits5"   style="led" display="NVout Bit 5" />
+        <var name="CTtoPTU:Pri_nvout_bits6"   style="led" display="NVout Bit 6" />
+        <var name="CTtoPTU:Pri_nvout_bits7"   style="led" display="NVout Bit 7" />
+
+        <var name="CTtoPTU:Pri_RawPAovrd"     style="led" display="Raw PA Override" />
+        <var name="CTtoPTU:Pri_RawATOTrReq"   style="led" display="RaW ATO Trac Req" />
+        <var name="CTtoPTU:Pri_RawNoPsnBrake" style="led" display="Raw No Psngr Brake" />
+        <var name="CTtoPTU:Pri_RawBuzzer"     style="led" display="Raw Buzzer" />
+        <var name="CTtoPTU:Pri_RawEBReset"    style="led" display="Raw EB Reset" />
+        <var name="CTtoPTU:Pri_nvout_bits13"  style="led" display="NVout Bit 13" />
+        <var name="CTtoPTU:Pri_nvout_bits14"  style="led" display="Raw Signaling Present" />
+        <var name="CTtoPTU:Pri_RawSignalPres" style="led" display="NVout Bit 14" />
+
+        <var name="CTtoPTU:Pri_nvout_bits16"  style="led" display="NVout Bit 16" />
+        <var name="CTtoPTU:Pri_nvout_bits17"  style="led" display="NVout Bit 17" />
+        <var name="CTtoPTU:Pri_nvout_bits18"  style="led" display="NVout Bit 18" />
+        <var name="CTtoPTU:Pri_nvout_bits19"  style="led" display="NVout Bit 19" />
+        <var name="CTtoPTU:Pri_nvout_bits20"  style="led" display="NVout Bit 20" />
+        <var name="CTtoPTU:Pri_nvout_bits21"  style="led" display="NVout Bit 21" />
+        <var name="CTtoPTU:Pri_nvout_bits22"  style="led" display="NVout Bit 22" />
+        <var name="CTtoPTU:Pri_nvout_bits23"  style="led" display="NVout Bit 23" />
+
+        <var name="CTtoPTU:Pri_nvout_bits24"  style="led" display="NVout Bit 24" />
+        <var name="CTtoPTU:Pri_nvout_bits25"  style="led" display="NVout Bit 25" />
+        <var name="CTtoPTU:Pri_RawPwireEn"    style="led" display="Raw PWire En" />
+        <var name="CTtoPTU:Pri_nvout_bits26"  style="led" display="NVout Bit 26" />
+        <var name="CTtoPTU:Pri_nvout_bits28"  style="led" display="NVout Bit 28" />
+        <var name="CTtoPTU:Pri_nvout_bits29"  style="led" display="NVout Bit 29" />
+        <var name="CTtoPTU:Pri_RawATCInCntl"  style="led" display="Raw ATC Ctrl Out" />
+        <var name="CTtoPTU:Pri_RawATCOnOut"   style="led" display="Raw ATC Online" />
+    </group>
+
+    <group name = "Secondary Vital" location = "1,0">
+        <var name="CTtoPTU:Sec_RawEB"         style="led" display="Raw EB Request" />
+        <var name="CTtoPTU:Sec_RawVzero"      style="led" display="Raw VZero" />
+        <var name="CTtoPTU:Sec_RawTracEn"     style="led" display= "Raw Trac Enable" />
+        <var name="CTtoPTU:Sec_RawLdoorEn"    style="led" display="Raw RDoor En" />
+        <var name="CTtoPTU:Sec_RawRdoorEn"    style="led" display="Raw LDoor En" />
+        <var name="CTtoPTU:Sec_RawNoDrEnByps" style="led" display="Raw No Door Bypass" />
+        <var name="CTtoPTU:Sec_RawBAOut"      style="led" display="Raw BA Out" />
+    </group>
+    <group name = "Secondary non-Vital" location = "1,1">
+        <var name="CTtoPTU:Sec_RawQVMCtrl1"   style="led" display="Raw QVM 1 Control" />
+        <var name="CTtoPTU:Sec_RawQVMCtrl2"   style="led" display="Raw QVM 2 Control" />
+        <var name="CTtoPTU:Sec_nvout_bits2"   style="led" display="NVout Bit 2" />
+        <var name="CTtoPTU:Sec_nvout_bits3"   style="led" display="NVout Bit 3" />
+        <var name="CTtoPTU:Sec_nvout_bits4"   style="led" display="NVout Bit 4" />
+        <var name="CTtoPTU:Sec_nvout_bits5"   style="led" display="NVout Bit 5" />
+        <var name="CTtoPTU:Sec_nvout_bits6"   style="led" display="NVout Bit 6" />
+        <var name="CTtoPTU:Sec_nvout_bits7"   style="led" display="NVout Bit 7" />
+
+        <var name="CTtoPTU:Sec_RawPAovrd"     style="led" display="Raw PA Override" />
+        <var name="CTtoPTU:Sec_RawATOTrReq"   style="led" display="RaW ATO Trac Req" />
+        <var name="CTtoPTU:Sec_RawNoPsnBrake" style="led" display="Raw No Psngr Brake" />
+        <var name="CTtoPTU:Sec_RawBuzzer"     style="led" display="Raw Buzzer" />
+        <var name="CTtoPTU:Sec_RawEBReset"    style="led" display="Raw EB Reset" />
+        <var name="CTtoPTU:Sec_nvout_bits13"  style="led" display="NVout Bit 13" />
+        <var name="CTtoPTU:Sec_nvout_bits14"  style="led" display="Raw Signaling Present" />
+        <var name="CTtoPTU:Sec_RawSignalPres" style="led" display="NVout Bit 14" />
+
+        <var name="CTtoPTU:Sec_nvout_bits16"  style="led" display="NVout Bit 16" />
+        <var name="CTtoPTU:Sec_nvout_bits17"  style="led" display="NVout Bit 17" />
+        <var name="CTtoPTU:Sec_nvout_bits18"  style="led" display="NVout Bit 18" />
+        <var name="CTtoPTU:Sec_nvout_bits19"  style="led" display="NVout Bit 19" />
+        <var name="CTtoPTU:Sec_nvout_bits20"  style="led" display="NVout Bit 20" />
+        <var name="CTtoPTU:Sec_nvout_bits21"  style="led" display="NVout Bit 21" />
+        <var name="CTtoPTU:Sec_nvout_bits22"  style="led" display="NVout Bit 22" />
+        <var name="CTtoPTU:Sec_nvout_bits23"  style="led" display="NVout Bit 23" />
+
+        <var name="CTtoPTU:Sec_nvout_bits24"  style="led" display="NVout Bit 24" />
+        <var name="CTtoPTU:Sec_nvout_bits25"  style="led" display="NVout Bit 25" />
+        <var name="CTtoPTU:Sec_RawPwireEn"    style="led" display="Raw PWire En" />
+        <var name="CTtoPTU:Sec_nvout_bits26"  style="led" display="NVout Bit 26" />
+        <var name="CTtoPTU:Sec_nvout_bits28"  style="led" display="NVout Bit 28" />
+        <var name="CTtoPTU:Sec_nvout_bits29"  style="led" display="NVout Bit 29" />
+        <var name="CTtoPTU:Sec_RawATCInCntl"  style="led" display="Raw ATC Ctrl Out" />
+        <var name="CTtoPTU:Sec_RawATCOnOut"   style="led" display="Raw ATC Online" />
+    </group>
+  </tab>
+
+    <tab name="Speed-Deceleration" style="table" >
+        <group name="Primary ATP Speed" location="0,0">
+            <var name="CTtoPTU:Pri_TrainSpeed" scale="0.1" display="Train Speed" />
+            <var name="CTtoPTU:Pri_TrainSpeed6840" scale="0.1" display="Tach1 Ch2D Speed" />
+            <var name="CTtoPTU:Pri_TrainSpeed6522" scale="0.1" display="Tach2 Ch1C Speed" />
+            <var name="CTtoPTU:Pri_TachDirection" style="enum" values="Unknown|Forward|Reverse|Invalid" display="Tach Direction" />
+        </group>
+
+        <group name="Primary ATO" location="0,1">
+            <var name="CTtoPTU:Pri_ATOspeed"        scale="0.01"    display="ATO speed" />
+        </group>
+
+        <group name="Primary ATP Deceleration" location="0,2">
+            <var name="CTtoPTU:Pri_AccelDecelRate" scale="0.01" display="Decel Rate" />
+            <var name="CTtoPTU:Pri_DecelValueFwd" display="Decel Fwd Value" />
+            <var name="CTtoPTU:Pri_DecelValueRev" display="Decel Rev Value" />
+            <var name="CTtoPTU:Pri_DecelCalibrated" style="led" display="Decel Calibrated" />
+            <var name="CTtoPTU:Pri_BrakeRateBank"  display="Brake Rate Bank" />
+            <var name="CTtoPTU:Pri_Tachdvdt"  scale="0.01"  display="Tach dv/dt" />
+        </group>
+
+        <group name="Secondary ATP Speed" location="1,0">
+           <var name="CTtoPTU:Sec_TrainSpeed" scale="0.1" display="Train Speed" />
+            <var name="CTtoPTU:Sec_TrainSpeed6840" scale="0.1" display="Tach1 Ch2D Speed" />
+            <var name="CTtoPTU:Sec_TrainSpeed6522" scale="0.1" display="Tach2 Ch1C Speed" />
+            <var name="CTtoPTU:Sec_TachDirection" style="enum" values="Unknown|Forward|Reverse|Invalid" display="Tach Direction" />
+        </group>
+
+        <group name="Secondary ATO" location="1,1">
+            <var name="CTtoPTU:Sec_ATOspeed"        scale="0.01"    display="ATO speed" />
+      </group>
+
+        <group name="Secondary ATP Deceleration" location="1,2">
+           <var name="CTtoPTU:Sec_AccelDecelRate" scale="0.01" display="Decel Rate" />
+            <var name="CTtoPTU:Sec_DecelValueFwd" display="Decel Fwd Value" />
+            <var name="CTtoPTU:Sec_DecelValueRev" display="Decel Rev Value" />
+            <var name="CTtoPTU:Sec_DecelCalibrated" style="led" display="Decel Calibrated" />
+            <var name="CTtoPTU:Sec_BrakeRateBank"  display="Brake Rate Bank" />
+            <var name="CTtoPTU:Sec_Tachdvdt"  scale="0.01"  display="Tach dv/dt" />
+        </group>
+
+        <group name="SESAM-QVM" location="0,3">
+            <var name="CTtoPTU:Sesam_TachCount1"  scale="1"  display="Tach 3 Ch1C Count" />
+            <var name="CTtoPTU:Sesam_TachCount2"  scale="1"  display="Tach 1 Ch2D Count" />
+
+            <var name="CTtoPTU:Sesam_Speed1"  scale="1"  display="Tach 3 Ch1C Speed" />
+            <var name="CTtoPTU:Sesam_Speed2"  scale="1"  display="Tach 1 Ch2D Speed" />
+        </group>
+    </tab>
+
+    <tab name="ATP" style="table" >
+        <group name = "Primary Controls" location = "0,0">
+            <var name="CTtoPTU:Sesam_PrimaryCommStatus" style="led" display="Prim Comm Stat" />
+            <var name="CTtoPTU:Pri_ATPType" style="enum" values="Unknown|Primary|Secondary|Invalid" display="Unit Type" />
+            <var name="CTtoPTU:Pri_ActiveCab" style="led" display="Active Cab" />
+            <var name="CTtoPTU:Pri_RedGreenInd" style="enum" values="Off|On" display="Signaling Present" />
+            <var name="CTtoPTU:Pri_CntlMode"  style="enum" values="OFF|ATP|PA|QVM|CD|TA|Invalid|PA Override" display="ATP OP Mode" />
+            <var name="CTtoPTU:Pri_MstCtrlDeadmanSts" style="led" display="Deadman Switch" />
+            <var name="CTtoPTU:Pri_MstCtrlQuadrant" style="enum" values="None|Brake|Coast|Traction|Error" display="Mst Ctrl Position" />
+            <var name="CTtoPTU:Pri_MstCtrlDirection" style="enum" values="Invalid|Neutral|Forward|Reverse" display="Mst Ctrl Dir" />
+            <var name="CTtoPTU:Pri_RedunSysAvail" style="led" display="This ATC Operational" />
+            <var name="CTtoPTU:Pri_DoorCloseReq" style="led" display="Door Close Req" />
+            <var name="CTtoPTU:Pri_StationSigDet" style="led" display= "Station Signal" />
+            <var name="CTtoPTU:Pri_Mod4khz"  style="enum" values="Off|4Khz|Rt Doors|Lf Doors" display="Mod 4 Khz" />
+        </group>
+
+       <group name = "Primary Signal Detection" location = "0,1">
+			<var name="CTtoPTU:Pri_ESLCode"  style="enum" values="?|NO_CODE|F0|??|F10|F15s|F15|F20|F25|F35|F45"   display="Enforced Speed Limit Code" />
+			<var name="CTtoPTU:Pri_TrkCirBoundDetect" style="led" display="Track Circuit Bound" />
+			<var name="CTtoPTU:Pri_SpeedCodePeriod"  display="Speed Code Per"  />
+			<var name="CTtoPTU:Pri_SpeedCodeDetected"  display="Speed Code Det" />
+			<var name="CTtoPTU:Pri_SpeedLimitCode" style="enum" values="NO_CODE|F0|Fvd|F10|F15s|F15|F20|F25|F35|F45" display="Decoded Speed Code" />
+       </group>
+    <group name = "Primary Status" location = "0,2">
+            <var name="CTtoPTU:Pri_Controlling" style="led" display="This ATC in Control" />
+            <var name="CTtoPTU:Pri_AbsoluteVzero" style="led" display="Absolute Vzero" />
+            <var name="CTtoPTU:Pri_TrainVzero" style="led" display="Train Vzero" />
+            <var name="CTtoPTU:Pri_OverSpeedStatus"  style="led"  display="Over speed Status" />
+            <var name="CTtoPTU:Pri_InitMotionChkTime"   display="Init Motion time" />
+            <var name="CTtoPTU:Pri_EnforcedSpeedLimit"   display="Enf Speed Limit"  />
+            <var name="CTtoPTU:Pri_TXBuzzerOn"  style="led"  display="TX Buzzer on" />
+            <var name="CTtoPTU:Pri_ATP_CutTraction"  style="led"  display="ATP Tract Cut" />
+            <var name="CTtoPTU:Pri_EB_BrakeActive"          style="led" display="EB Request" />
+            <var name="CTtoPTU:Pri_EBFeedback"              style="led" display="EB feedback" />
+            <var name="CTtoPTU:Pri_FullServiceBrakeRequest" style="led" display="Full Service Brake" />
+            <var name="CTtoPTU:Pri_BrakeAssuranceMet"       style="led" display="Brake Assurance"  />
+            <var name="CTtoPTU:Pri_SpacingBrakeRequest"     style="led" display="Spacing Brake" />
+       </group>
+
+        <group name = "Primary Stop in Station" location = "0,3">
+            <var name="CTtoPTU:Pri_CanStopInStation"  style="led"  display="Can Stop In Stat" />
+            <var name="CTtoPTU:Pri_StopInStationState"   display="Stop in Stat" />
+            <var name="CTtoPTU:Pri_DepartDistanceFromStation"   display="ATP Depart Distance" />
+      </group>
+      
+      <group name="Primary Comm Status" location="0,4">
+            <var name="CTtoPTU:SESAM_PriLostmsgCnt"   display="Pri ATP lost count" />
+            <var name="CTtoPTU:SESAM_PriSeqNum"   display="Pri ATP Seq Num" />
+            <var name="CTtoPTU:SESAM_PribadMsgLenCount"   display="Pri ATP bad msg len count" />
+            <var name="CTtoPTU:SESAM_PribadCheckSumCount"   display="Pri C/S error count" />
+            <var name="CTtoPTU:SESAM_Pripmsg_cnt"   display="Pri Msg this cycle" />
+            <var name="CTtoPTU:SESAM_PriUartError"   display="Pri uart error" />
+      </group>
+
+        <group name = "Secondary Controls" location = "1,0">
+            <var name="CTtoPTU:Sesam_SecondaryCommStatus" style="led" display="Sec Comm Stat" />
+            <var name="CTtoPTU:Sec_ATPType" style="enum" values="Unknown|Primary|Secondary|Invalid" display="Unit Type" />
+            <var name="CTtoPTU:Sec_ActiveCab" style="led" display="Active Cab" />
+            <var name="CTtoPTU:Sec_RedGreenInd" style="enum" values="Off|On" display="Signaling Present" />
+            <var name="CTtoPTU:Sec_CntlMode"  style="enum" values="OFF|ATP|PA|QVM|CD|TA|Invalid|PA Override" display="ATP OP Mode" />
+            <var name="CTtoPTU:Sec_MstCtrlDeadmanSts" style="led" display="Deadman Switch" />
+            <var name="CTtoPTU:Sec_MstCtrlQuadrant" style="enum" values="None|Brake|Coast|Traction|Error" display="Mst Ctrl Position" />
+            <var name="CTtoPTU:Sec_MstCtrlDirection" style="enum" values="Invalid|Neutral|Forward|Reverse" display="Mst Ctrl Dir" />
+            <var name="CTtoPTU:Sec_RedunSysAvail" style="led" display="This ATC Operational" />
+            <var name="CTtoPTU:Sec_DoorCloseReq" style="led" display="Door Close Req" />
+            <var name="CTtoPTU:Sec_StationSigDet" style="led" display= "Station Signal" />
+            <var name="CTtoPTU:Sec_Mod4khz"  style="enum" values="Off|4Khz|Rt Doors|Lf Doors" display="Mod 4 Khz" />
+        </group>
+
+        <group name = "Secondary Signal Detection" location = "1,1">
+            <var name="CTtoPTU:Sec_ESLCode"  style="enum" values="?|NO_CODE|F0|??|F10|F15s|F15|F20|F25|F35|F45"   display="Enforced Speed Limit Code" />
+			<var name="CTtoPTU:Sec_TrkCirBoundDetect" style="led" display="Track Circuit Bound" />
+			<var name="CTtoPTU:Sec_SpeedCodePeriod"  display="Speed Code Per"  />
+			<var name="CTtoPTU:Sec_SpeedCodeDetected"  display="Speed Code Det" />
+			<var name="CTtoPTU:Sec_SpeedLimitCode" style="enum" values="NO_CODE|F0|Fvd|F10|F15s|F15|F20|F25|F35|F45" display="Decoded Speed Code" />
+        </group>
+
+        <group name = "Secondary Status" location = "1,2">
+            <var name="CTtoPTU:Sec_Controlling" style="led" display="This ATC in Control" />
+            <var name="CTtoPTU:Sec_AbsoluteVzero" style="led" display="Absolute Vzero" />
+            <var name="CTtoPTU:Sec_TrainVzero" style="led" display="Train Vzero" />
+            <var name="CTtoPTU:Sec_OverSpeedStatus"  style="led"  display="Over speed Status" />
+            <var name="CTtoPTU:Sec_InitMotionChkTime"   display="Init Motion time" />
+            <var name="CTtoPTU:Sec_EnforcedSpeedLimit"   display="Enf Speed Limit"  />
+            <var name="CTtoPTU:Sec_TXBuzzerOn"  style="led"  display="TX Buzzer on" />
+            <var name="CTtoPTU:Sec_ATP_CutTraction"  style="led"  display="ATP Tract Cut" />
+            <var name="CTtoPTU:Sec_EB_BrakeActive"          style="led" display="EB Request" />
+            <var name="CTtoPTU:Sec_EBFeedback"              style="led" display="EB feedback" />
+            <var name="CTtoPTU:Sec_FullServiceBrakeRequest" style="led" display="Full Service Brake" />
+            <var name="CTtoPTU:Sec_BrakeAssuranceMet"       style="led" display="Brake Assurance"  />
+            <var name="CTtoPTU:Sec_SpacingBrakeRequest"     style="led" display="Spacing Brake" />
+       </group>
+
+        <group name = "Secondary Stop in Station" location = "1,3">
+           <var name="CTtoPTU:Sec_CanStopInStation"  style="led"  display="Can Stop In Stat" />
+            <var name="CTtoPTU:Sec_StopInStationState"   display="Stop in Stat" />
+            <var name="CTtoPTU:Sec_DepartDistanceFromStation"   display="ATP Depart Distance" />
+      </group>
+
+      <group name="Secondary Comm Status" location="1,4">
+            <var name="CTtoPTU:SESAM_SecLostmsgCnt"   display="Sec ATP lost count" />
+            <var name="CTtoPTU:SESAM_SecSeqNum"   display="Sec ATP Seq Num" />
+            <var name="CTtoPTU:SESAM_SecbadMsgLenCount"   display="Sec ATP bad msg len count" />
+            <var name="CTtoPTU:SESAM_SecbadCheckSumCount"   display="Sec C/S error count" />
+            <var name="CTtoPTU:SESAM_Secpmsg_cnt"   display="Sec Msg this cycle" />
+            <var name="CTtoPTU:SESAM_SecUartError"   display="Sec uart error" />
+     </group>
+      
+    </tab>
+
+    <tab name="ATO" style="table" >
+        <group name = "Primary" location = "0,0">
+            <var name="CTtoPTU:Pri_ATOOperational" style="led" display= "ATO Operational" />
+            <var name="CTtoPTU:Pri_ATOInd"  style="led"  display="ATO Op Status" />
+            <var name="CTtoPTU:Pri_DepartureInd" style="led" display="ATO Departure Ind" />
+            <var name="CTtoPTU:Pri_ATOTractInd" style="led" display="ATO Traction" />
+            <var name="CTtoPTU:Pri_ATOCoastInd" style="led" display="ATO Coast" />
+            <var name="CTtoPTU:Pri_ATOBrakeInd" style="led" display="ATO Brake" />
+            <var name="CTtoPTU:Pri_StationStopActive" style="led" display="Station Stop" />
+            <var name="CTtoPTU:Pri_CancelStationStopInd" style="led" display="Cancel Station Stop" />
+            <var name="CTtoPTU:Pri_BypassStation"  style="led"  display="Bypass Station" />
+            <var name="CTtoPTU:Pri_PwireEffort" display="PWire Effort" />
+            <var name="CTtoPTU:Pri_PAOvrRideRejected"  style="led"  display="Override of PA Rej" />
+            <var name="CTtoPTU:Pri_PAOvrRide"  style="led"  display="Override PA mode" />
+            <var name="CTtoPTU:Pri_DADepartureTime" display="DA Depart Time" />
+            <var name="CTtoPTU:Pri_SStopBeacon1Det" style="led" display="Stop Beacon 1" />
+            <var name="CTtoPTU:Pri_SStopBeacon2Det" style="led" display="Stop Beacon 2" />
+            <var name="CTtoPTU:Pri_SStopBeacon3Det" style="led" display="Stop Beacon 3" />
+            <var name="CTtoPTU:Pri_OpStopBea1Det" style="led" display="OP Beacon 1" />
+            <var name="CTtoPTU:Pri_OpStopBea2Det" style="led" display="OP Beacon 2" />
+            <var name="CTtoPTU:Pri_CoastBeaconDetected" style="led" display="Coast Beacon" />
+            <var name="CTtoPTU:Pri_ATODinstanceToStop" display="ATO Dist Stop" />
+            <var name="CTtoPTU:Pri_StatStopInd" style="led" display="Station Stop Ind" />
+            <var name="CTtoPTU:Pri_ATOProgramStopComplete" style="led" display="ATO Prog Stp Cmplt" />
+            <var name="CTtoPTU:Pri_ATOCanPrgStActive" style="led" display="Can Prog st act" />
+            <var name="CTtoPTU:Pri_ATOFSBReq" style="led" display="FSB req" />
+
+            <!-- new 6-6-2014 -->
+            <var name="CTtoPTU:Pri_DAButtonSts"          style="led" display="DA Button" />
+            
+        </group>
+
+        <group name = "Secondary" location = "1,0">
+            <var name="CTtoPTU:Sec_ATOOperation" style="led" display= "ATO Operational" />
+            <var name="CTtoPTU:Sec_ATOInd"  style="led"  display="ATO Op Status" />
+            <var name="CTtoPTU:Sec_DepartureInd" style="led" display="ATO Departure Ind" />
+            <var name="CTtoPTU:Sec_ATOTractInd" style="led" display="ATO Traction" />
+            <var name="CTtoPTU:Sec_ATOCoastInd" style="led" display="ATO Coast" />
+            <var name="CTtoPTU:Sec_ATOBrakeInd" style="led" display="ATO Brake" />
+            <var name="CTtoPTU:Sec_StationStopActive" style="led" display="Station Stop" />
+            <var name="CTtoPTU:Sec_CancelStationStopInd" style="led" display="Cancel Station Stop" />
+            <var name="CTtoPTU:Sec_BypassStation"  style="led"  display="Bypass Station" />
+            <var name="CTtoPTU:Sec_PwireEffort" display="PWire Effort" />
+            <var name="CTtoPTU:Sec_PAOvrRideRejected"  style="led"  display="Override of PA Rej" />
+            <var name="CTtoPTU:Sec_PAOvrRide"  style="led"  display="Override PA mode" />
+            <var name="CTtoPTU:Sec_DADepartureTime" display="DA Depart Time" />
+            <var name="CTtoPTU:Sec_SStopBeacon1Det" style="led" display="Stop Beacon 1" />
+            <var name="CTtoPTU:Sec_SStopBeacon2Det" style="led" display="Stop Beacon 2" />
+            <var name="CTtoPTU:Sec_SStopBeacon3Det" style="led" display="Stop Beacon 3" />
+            <var name="CTtoPTU:Sec_OpStopBea1Det" style="led" display="OP Beacon 1" />
+            <var name="CTtoPTU:Sec_OpStopBea2Det" style="led" display="OP Beacon 2" />
+            <var name="CTtoPTU:Sec_CoastBeaconDetected" style="led" display="Coast Beacon" />
+            <var name="CTtoPTU:Sec_ATODinstanceToStop" display="ATO Dist Stop" />
+            <var name="CTtoPTU:Sec_StatStopInd" style="led" display="Station Stop Ind" />
+            <var name="CTtoPTU:Sec_ATOProgramStopComplete" style="led" display="ATO Prog Stp Cmplt" />
+            <var name="CTtoPTU:Sec_ATOCanPrgStActive" style="led" display="Can Prog st act" />
+            <var name="CTtoPTU:Sec_ATOFSBReq" style="led" display="FSB req" />
+			
+           <var name="CTtoPTU:Sec_DAButtonSts"          style="led" display="DA Button" />
+      </group>
+    </tab>
+
+    <tab name="SESAM" style="table" >
+        <group name="Distance" location="0,0">
+            <var name="CTtoPTU:Sesam_DistanceTraveled" display="Travel Distance" />
+            <var name="CTtoPTU:Sesam_DistanceLastStation" display="Last Stat Dist" />
+            <var name="CTtoPTU:Sesam_DistanceLastTerminus" display="Last Term Dist" />
+            <var name="CTtoPTU:Sesam_DistanceThisCycle" display="Cycle Distance"  />
+            <var name="CTtoPTU:Sesam_AccumDistance" display="Accum Dist" />
+            <var name="CTtoPTU:Sesam_Odometer" display="Odometer Km" />
+            <var name="CTtoPTU:Sesam_OdoFraction" display="Odometer meters" />
+            <var name="CTtoPTU:DistanceInDegradedMode"  display="Dist in Degraded Mode" />
+        </group>
+
+        <group name="Time" location="1,0">
+            <var name="CTtoPTU:Sesam_Runtime" display="Runtime Minutes" />
+            <var name="CTtoPTU:Sesam_AccumRuntime" display="Accum Runtime Hours" />
+            <var name="CTtoPTU:Sesam_AccumRunFrac" display="Accum Runtime Minutes" />
+            <var name="CTtoPTU:Sesam_LastTimeUpdate" display="Last Update" />
+        </group>
+
+        <group name="Localization" location="0,1">
+            <var name="CTtoPTU:Sesam_trainOrientation" style="enum" values="Normal|Reverse" display="Train Orient"  />
+            <var name="CTtoPTU:Sesam_centerLineId" display="Center Line ID" />
+            <var name="CTtoPTU:Sesam_CenterTrack" display="Center Track ID" />
+            <var name="CTtoPTU:Sesam_CenterLineSection" display="Center Line Segment" />
+            <var name="CTtoPTU:Sesam_CenterLocation" display="Center Location" />
+            <var name="CTtoPTU:Sesam_CenterLineText" style="string" display="Center Line Text" />
+
+            <var name="CTtoPTU:Sesam_R1LineId" display="R1 Line ID" />
+            <var name="CTtoPTU:Sesam_R1Track" display="R1 Track ID" />
+            <var name="CTtoPTU:Sesam_R1LineSection" display="R1 Line Segment" />
+            <var name="CTtoPTU:Sesam_R1Location" display="R1 Location" />
+            <var name="CTtoPTU:Sesam_R1LineText"  style="string" display="R1 Line Text"/>
+
+            <var name="CTtoPTU:Sesam_R9LineId" display="R9 Line ID" />
+            <var name="CTtoPTU:Sesam_R9Track" display="R9 Track ID" />
+            <var name="CTtoPTU:Sesam_R9LineSection" display="R9 Line Segment" />
+            <var name="CTtoPTU:Sesam_R9Location" display="R9 Location" />
+            <var name="CTtoPTU:Sesam_R9LineText"  style="string" display="R9 Line Text"/>
+
+        </group>
+
+        <group name="Network Status" location="1,1">
+            <var name="CTtoPTU:Sesam_CabType" style="enum" values="?|R1|R9" display="Cab Type" />
+            <var name="CTtoPTU:Sesam_Temperature" display="Temperature" />
+            <var name="CTtoPTU:VModeGenSys" display="Health to SamSac" />
+            <var name="CTtoPTU:VCptrMesVitCT" display="Fresh speed counter" />
+            <var name="CTtoPTU:Sesam_TrainNumber" display="Train Number" />
+            <var name="CTtoPTU:Sesam_SAMSACCommStatus"  style="led" display="SAMSAC Comm Stat" />
+            <var name="CTtoPTU:Sesam_FreshRxInternalData" style="led"  display="Fresh CtInt Stat" />
+            <var name="CTtoPTU:Sesam_IntersysSource"  style="led"  display="Intersys Source" />
+        </group>
+
+        <group name="Event Recording" location="0,2">
+            <var name="CTtoPTU:Sesam_QVM_Active" display="QVM Active" />
+            <var name="CTtoPTU:Sesam_FailureCount" display="Total Failures" />
+            <var name="CTtoPTU:Sesam_EventsRecording" display="Event Record" />
+            <var name="CTtoPTU:Sesam_CircLogBegin" display="Circ Log Begin" />
+            <var name="CTtoPTU:Sesam_CircLogEnd" display="Circ Log End" />
+        </group>
+    </tab>
+
+    <tab name="Events" style = "table">
+    <group name = "Primary" location = "0,0">
+        <var name="CTtoPTU:Pri_ATP_CPU_Error"                style="led" display="ATP CPU Err" />
+        <var name="CTtoPTU:Pri_DecelerometerError"           style="led"  display="Decel Err" />
+        <var name="CTtoPTU:Pri_EEPROM_PCB_Error"             style="led"  display="EEPROM PCB Err" />
+        <var name="CTtoPTU:Pri_VitalInput_1_PCB_Error"       style="led"  display="Vin 2 PCB Err" />
+        <var name="CTtoPTU:Pri_VitalInput_2_PCB_Error"       style="led"  display="Vin 1 PCB Err" />
+        <var name="CTtoPTU:Pri_NonVitalPCB_Error"            style="led"  display="NV PCB Err" />
+        <var name="CTtoPTU:Pri_MultifunctionPCB_Error"       style="led"  display="MF PCB Err" />
+        <var name="CTtoPTU:Pri_QVMControl1XChk"              style="led" display="QVM Ctrl 1 XChk" />
+        <var name="CTtoPTU:Pri_QVMControl2XChk"              style="led" display="QVM Ctrl 2 XChk" />
+        <var name="CTtoPTU:Pri_ATO_ModuleFailure"            style="led"  display="ATO Module Fail" />
+        <var name="CTtoPTU:Pri_CSRD_ModuleFailure"           style="led" display="CSRD Module Fail" />
+        <var name="CTtoPTU:Pri_BrakeRateNotAchieved"         style="led"  display="Brake Rate Err" />
+        <var name="CTtoPTU:Pri_ATPVoltageRangeError"         style="led"  display="ATP Volt Err" />
+        <var name="CTtoPTU:Pri_InvalidUnitTypeError"         style="led"  display="Invalid Unit Err" />
+        <var name="CTtoPTU:Pri_UnstableUnitTypeError"        style="led"  display="Unstable Unit Err" />
+        <var name="CTtoPTU:Pri_ModeChangeMotion"             style="led"  display="Mode Change Err" />
+        <var name="CTtoPTU:Pri_DirChangeInMotionError"       style="led"  display="Direction Change Err" />
+        <var name="CTtoPTU:Pri_Fwd_RevXChkError"             style="led"  display="Fwd Rev XChk Err" />
+        <var name="CTtoPTU:Pri_OperatingModeXChkError"       style="led"  display="OP Mode XChk Err" />
+        <var name="CTtoPTU:Pri_DirMatchError"                style="led"  display="Dir Mismatch Err" />
+        <var name="CTtoPTU:Pri_ATP_CSRD_CommFailure"         style="led"  display="ATP CSRD Comm Fail" />
+        <var name="CTtoPTU:Pri_ATP_PA_CommFailure"           style="led" display="ATP PA Comm Fail" />
+        <var name="CTtoPTU:Pri_LossofSignaling"              style="led"  display="Lost Signal" />
+        <var name="CTtoPTU:Pri_RollAwayDetect"               style="led" display="Rollaway" />
+        <var name="CTtoPTU:Pri_OverspeedEventStatus"         style="led"  display="Overspeed Limit Exceeded" />
+        <var name="CTtoPTU:Pri_LossOfSpeedSensor"            style="led"  display="Speed Sensor Loss" />
+        <var name="CTtoPTU:Pri_SpeedSensorMismatch"          style="led"  display= "Spd Sens Mismatch"/>
+        <var name="CTtoPTU:Pri_InitialMotionChkError"        style="led"  display="Init Motion Err" />
+        <var name="CTtoPTU:Pri_F10F15sDropEB"                style="led"  display="F10 F15s Drop" />
+        <var name="CTtoPTU:Pri_EBResetError"                 style="led" display="EB Reset Error" />
+        <var name="CTtoPTU:Pri_TractionCutXChkError"         style="led"  display="Trac Cut XChk Err" />
+        <var name="CTtoPTU:Pri_TractionCutError"             style="led"  display="Trac Cut Err" />
+        <var name="CTtoPTU:Pri_UnexpectedTractReqError"      style="led"  display="Unexp Trac Req Err" />
+        <var name="CTtoPTU:Pri_EBXChk"                       style="led"  display="EB XChk Err" />
+        <var name="CTtoPTU:Pri_BrakeAssurXChkError"          style="led"  display="Brake Assur XChk Err"  />
+        <var name="CTtoPTU:Pri_V0_DecelXChkError"            style="led"  display="NoMo Decel XChk" />
+        <var name="CTtoPTU:Pri_CancSStopBtnStk"              style="led"  display="Cancel SStop Btn Stk" />
+        <var name="CTtoPTU:Pri_MissingBeacon"                style="led"  display="Missing Beacon" />
+        <var name="CTtoPTU:Pri_DTAButtonStuck"               style="led"  display="DTA Button Stuck" />
+        <var name="CTtoPTU:Pri_DAButtonStuck"                style="led"  display="DA Button Stuck" />
+        <var name="CTtoPTU:Pri_ProgramStopSeqEr"             style="led"  display="Prgrm Stop Seq Err" />
+        <var name="CTtoPTU:Pri_OpStopInitErr"                style="led"  display="OP Stop Init Err" />
+        <var name="CTtoPTU:Pri_CoastComndRefused"            style="led"  display="Coast Cmd Refused" />
+        <var name="CTtoPTU:Pri_StStopSeqError"               style="led"  display="SStop Seq Err" />
+        <var name="CTtoPTU:Pri_ManualDoorCloseStuckError"    style="led"  display="Door Close Btn Stk"  />
+        <var name="CTtoPTU:Pri_DoorOpenSequenceError"        style="led"  display="Door Open Seq Err" />
+        <var name="CTtoPTU:Pri_ProgStopInitError"            style="led"  display="Program Stop Init Error" />
+        <var name="CTtoPTU:Pri_InvalidBeacon"                style="led"  display="Invalid Beacon" />
+        <var name="CTtoPTU:Pri_QVMtestError"                 style="led"  display="QVM test error" />
+        <var name="CTtoPTU:Pri_ProgramStopInBErr"            style="led"  display="Prog stop Init Beacon" />
+        <var name="CTtoPTU:Pri_LossofSSensorB"               style="led"  display="SS B loss" />
+        <var name="CTtoPTU:Pri_CSRD_testError"               style="led"  display="CSRD test error" />     
+
+        <var name="CTtoPTU:Pri_DecelUnstableError"          style="led"  display="Decel Unstable" />
+        <var name="CTtoPTU:pri_MCStatusError"               style="led"  display="MC status Error" />
+        <var name="CTtoPTU:Pri_SpeedCapError"               style="led"  display="Speed Cap Error" />
+        <var name="CTtoPTU:Pri_DoorModeXCheckError"         style="led"  display="Door Mode Xchk" />
+
+        <!-- new 7-17-2014 -->
+        <var name="CTtoPTU:Pri_Traction_En_XChkError"        style="led"  display="Tract Enable XChk" />
+        <var name="CTtoPTU:Pri_DoorEnLeftXCheckError"        style="led"  display="Door En Left Xchk" />
+        <var name="CTtoPTU:Pri_DoorEnRightXCheckError"       style="led"  display="Door En Right Xchk" />
+        <var name="CTtoPTU:Pri_DoorBypassXCheckError"        style="led"  display="Door En Bypass Xchk" />
+        <!-- new 11-11-2014 -->
+        <var name="CTtoPTU:Pri_InvCutXChkError"        style="led"  display="Inv Cut XChk" />
+ 
+    </group>
+
+    <group name = "Secondary" location = "1,0">
+       <var name="CTtoPTU:Sec_ATP_CPU_Error"                style="led" display="ATP CPU Err" />
+        <var name="CTtoPTU:Sec_DecelerometerError"           style="led"  display="Decel Err" />
+        <var name="CTtoPTU:Sec_EEPROM_PCB_Error"             style="led"  display="EEPROM PCB Err" />
+        <var name="CTtoPTU:Sec_VitalInput_1_PCB_Error"       style="led"  display="Vin 2 PCB Err" />
+        <var name="CTtoPTU:Sec_VitalInput_2_PCB_Error"       style="led"  display="Vin 1 PCB Err" />
+        <var name="CTtoPTU:Sec_NonVitalPCB_Error"            style="led"  display="NV PCB Err" />
+        <var name="CTtoPTU:Sec_MultifunctionPCB_Error"       style="led"  display="MF PCB Err" />
+        <var name="CTtoPTU:Sec_QVMControl1XChk"              style="led" display="QVM Ctrl 1 XChk" />
+        <var name="CTtoPTU:Sec_QVMControl2XChk"              style="led" display="QVM Ctrl 2 XChk" />
+        <var name="CTtoPTU:Sec_ATO_ModuleFailure"            style="led"  display="ATO Module Fail" />
+        <var name="CTtoPTU:Sec_CSRD_ModuleFailure"           style="led" display="CSRD Module Fail" />
+        <var name="CTtoPTU:Sec_BrakeRateNotAchieved"         style="led"  display="Brake Rate Err" />
+        <var name="CTtoPTU:Sec_ATPVoltageRangeError"         style="led"  display="ATP Volt Err" />
+        <var name="CTtoPTU:Sec_InvalidUnitTypeError"         style="led"  display="Invalid Unit Err" />
+        <var name="CTtoPTU:Sec_UnstableUnitTypeError"        style="led"  display="Unstable Unit Err" />
+        <var name="CTtoPTU:Sec_ModeChangeMotion"             style="led"  display="Mode Change Err" />
+        <var name="CTtoPTU:Sec_DirChangeInMotionError"       style="led"  display="Direction Change Err" />
+        <var name="CTtoPTU:Sec_Fwd_RevXChkError"             style="led"  display="Fwd Rev XChk Err" />
+        <var name="CTtoPTU:Sec_OperatingModeXChkError"       style="led"  display="OP Mode XChk Err" />
+        <var name="CTtoPTU:Sec_DirMatchError"                style="led"  display="Dir Mismatch Err" />
+        <var name="CTtoPTU:Sec_ATP_CSRD_CommFailure"         style="led"  display="ATP CSRD Comm Fail" />
+        <var name="CTtoPTU:Sec_ATP_PA_CommFailure"           style="led" display="ATP PA Comm Fail" />
+        <var name="CTtoPTU:Sec_LossofSignaling"              style="led"  display="Lost Signal" />
+        <var name="CTtoPTU:Sec_RollAwayDetect"               style="led" display="Rollaway" />
+        <var name="CTtoPTU:Sec_OverspeedEventStatus"         style="led"  display="Overspeed Limit Exceeded" />
+        <var name="CTtoPTU:Sec_LossOfSpeedSensor"            style="led"  display="Speed Sensor Loss" />
+        <var name="CTtoPTU:Sec_SpeedSensorMismatch"          style="led"  display= "Spd Sens Mismatch"/>
+        <var name="CTtoPTU:Sec_InitialMotionChkError"        style="led"  display="Init Motion Err" />
+        <var name="CTtoPTU:Sec_F10F15sDropEB"                style="led"  display="F10 F15s Drop" />
+        <var name="CTtoPTU:Sec_EBResetError"                 style="led" display="EB Reset Error" />
+        <var name="CTtoPTU:Sec_TractionCutXChkError"         style="led"  display="Trac Cut XChk Err" />
+        <var name="CTtoPTU:Sec_TractionCutError"             style="led"  display="Trac Cut Err" />
+        <var name="CTtoPTU:Sec_UnexpectedTractReqError"      style="led"  display="Unexp Trac Req Err" />
+        <var name="CTtoPTU:Sec_EBXChk"                       style="led"  display="EB XChk Err" />
+        <var name="CTtoPTU:Sec_BrakeAssurXChkError"          style="led"  display="Brake Assur XChk Err"  />
+        <var name="CTtoPTU:Sec_V0_DecelXChkError"            style="led"  display="NoMo Decel XChk" />
+        <var name="CTtoPTU:Sec_CancSStopBtnStk"              style="led"  display="Cancel SStop Btn Stk" />
+        <var name="CTtoPTU:Sec_MissingBeacon"                style="led"  display="Missing Beacon" />
+        <var name="CTtoPTU:Sec_DTAButtonStuck"               style="led"  display="DTA Button Stuck" />
+        <var name="CTtoPTU:Sec_DAButtonStuck"                style="led"  display="DA Button Stuck" />
+        <var name="CTtoPTU:Sec_ProgramStopSeqEr"             style="led"  display="Prgrm Stop Seq Err" />
+        <var name="CTtoPTU:Sec_OpStopInitErr"                style="led"  display="OP Stop Init Err" />
+        <var name="CTtoPTU:Sec_CoastComndRefused"            style="led"  display="Coast Cmd Refused" />
+        <var name="CTtoPTU:Sec_StStopSeqError"               style="led"  display="SStop Seq Err" />
+        <var name="CTtoPTU:Sec_ManualDoorCloseStuckError"    style="led"  display="Door Close Btn Stk"  />
+        <var name="CTtoPTU:Sec_DoorOpenSequenceError"        style="led"  display="Door Open Seq Err" />
+        <var name="CTtoPTU:Sec_ProgStopInitError"            style="led"  display="Program Stop Init Error" />
+        <var name="CTtoPTU:Sec_InvalidBeacon"                style="led"  display="Invalid Beacon" />
+        <var name="CTtoPTU:Sec_QVMtestError"                 style="led"  display="QVM test error" />
+        <var name="CTtoPTU:Sec_ProgramStopInBErr"            style="led"  display="Prog stop Init Beacon" />
+        <var name="CTtoPTU:Sec_LossofSSensorB"               style="led"  display="SS B loss" />
+        <var name="CTtoPTU:Sec_CSRD_testError"               style="led"  display="CSRD test error" />     
+
+        <!-- new 6-3-2014 -->
+        <var name="CTtoPTU:Sec_DecelUnstableError"          style="led"  display="Decel Unstable" />
+        <var name="CTtoPTU:Sec_MCStatusError"               style="led"  display="MC status Error" />
+        <var name="CTtoPTU:Sec_SpeedCapError"               style="led"  display="Speed Cap Error" />
+        <var name="CTtoPTU:Sec_DoorModeXCheckError"         style="led"  display="Door Mode Xchk" />
+
+        <!-- new 7-17-2014 -->
+        <var name="CTtoPTU:Sec_Traction_En_XChkError"        style="led"  display="Tract Enable XChk" />
+        <var name="CTtoPTU:Sec_DoorEnLeftXCheckError"        style="led"  display="Door En Left Xchk" />
+        <var name="CTtoPTU:Sec_DoorEnRightXCheckError"       style="led"  display="Door En Right Xchk" />
+        <var name="CTtoPTU:Sec_DoorBypassXCheckError"        style="led"  display="Door En Bypass Xchk" />
+        <!-- new 11-11-2014 -->
+        <var name="CTtoPTU:Sec_InvCutXChkError"        style="led"  display="Inv Cut XChk" />
+
+    </group>
+
+   <group name = "SESAM" location = "0,1">
+        <var name="CTtoPTU:Sesam_Tach1SignalError"   style="led" display="Tach 1 Sig Err" />
+        <var name="CTtoPTU:Sesam_Tach2SignalError"   style="led" display="Tach 2 Sig Err" />
+        <var name="CTtoPTU:Sesam_RelativeTachError"  style="led"  display="Rel Tach Err" />
+        <var name="CTtoPTU:Sesam_CorruptedConfig"    style="led" display="Corrupt Cfg" />
+        <var name="CTtoPTU:Sesam_MemoryError"        style="led" display="Memory Err" />
+        <var name="CTtoPTU:Sesam_TempHighError"      style="led" display="High Temp Err"  />
+        <var name="CTtoPTU:Sesam_TempLowError"       style="led" display="Low Temp Err"  />
+        <var name="CTtoPTU:Sesam_VoltageError"       style="led" display="Voltage Err" />
+        <var name="CTtoPTU:DecelMissMatch"           style="led" display="Decel Mismatch" />
+        <var name="CTtoPTU:InvalidPosition"          style="led" display="Invalid Position Status" />
+        <var name="CTtoPTU:Sesam_EnterDegradedMode"  style="led" display="Enter Degrade Mode" />
+        <var name="CTtoPTU:Sesam_ExitDegradedMode"   style="led" display="Exit Degrade Mode" />
+        <var name="CTtoPTU:Sesam_OverVoltageStatus"  style="led" display="Over Volt Stat" />
+        <var name="CTtoPTU:Sesam_UnderVoltageStatus" style="led" display="Under Volt Stat" />
+        <var name="CTtoPTU:Sesam_SelfTestError"      style="led" display="SESAM Test Error"  />
+    </group>
+
+   <group name = "User Defined" location = "0,2">
+        <var name="CTtoPTU:Sesam_UserEvent01" style="led" display="User Event 1" />
+        <var name="CTtoPTU:Sesam_UserEvent02" style="led" display="User Event 2" />
+        <var name="CTtoPTU:Sesam_UserEvent03" style="led" display="User Event 3" />
+        <var name="CTtoPTU:Sesam_UserEvent04" style="led" display="User Event 4" />
+        <var name="CTtoPTU:Sesam_UserEvent05" style="led" display="User Event 5" />
+        <var name="CTtoPTU:Sesam_UserEvent06" style="led" display="User Event 6" />
+        <var name="CTtoPTU:Sesam_UserEvent07" style="led" display="User Event 7" />
+        <var name="CTtoPTU:Sesam_UserEvent08" style="led" display="User Event 8" />
+        <var name="CTtoPTU:Sesam_UserEvent09" style="led" display="User Event 9" />
+        <var name="CTtoPTU:Sesam_UserEvent10" style="led" display="User Event 10" />
+        <var name="CTtoPTU:Sesam_UserEvent11" style="led" display="User Event 11" />
+        <var name="CTtoPTU:Sesam_UserEvent12" style="led" display="User Event 12" />
+        <var name="CTtoPTU:Sesam_UserEvent13" style="led" display="User Event 13" />
+        <var name="CTtoPTU:Sesam_UserEvent14" style="led" display="User Event 14" />
+        <var name="CTtoPTU:Sesam_UserEvent15" style="led" display="User Event 15" />
+        <var name="CTtoPTU:Sesam_UserEvent16" style="led" display="User Event 16" />
+        <var name="CTtoPTU:Sesam_UserEvent17" style="led" display="User Event 17" />
+        <var name="CTtoPTU:Sesam_UserEvent18" style="led" display="User Event 18" />
+        <var name="CTtoPTU:Sesam_UserEvent19" style="led" display="User Event 19" />
+        <var name="CTtoPTU:Sesam_UserEvent20" style="led" display="User Event 20" />
+        <var name="CTtoPTU:Sesam_UserEvent21" style="led" display="User Event 21" />
+        <var name="CTtoPTU:Sesam_UserEvent22" style="led" display="User Event 22" />
+        <var name="CTtoPTU:Sesam_UserEvent23" style="led" display="User Event 23" />
+        <var name="CTtoPTU:Sesam_UserEvent24" style="led" display="User Event 24" />
+        <var name="CTtoPTU:Sesam_UserEvent25" style="led" display="User Event 25" />
+        <var name="CTtoPTU:Sesam_UserEvent26" style="led" display="User Event 26" />
+        <var name="CTtoPTU:Sesam_UserEvent27" style="led" display="User Event 27" />
+        <var name="CTtoPTU:Sesam_UserEvent28" style="led" display="User Event 28" />
+        <var name="CTtoPTU:Sesam_UserEvent29" style="led" display="User Event 29" />
+        <var name="CTtoPTU:Sesam_UserEvent30" style="led" display="User Event 30" />
+
+   </group>
+ </tab>
+
+  <tab name="AutoTest" style = "table">
+    <group name = "Primary" location = "0,0">
+        <var name="CTtoPTU:Pri_CSRD_SelfTestResult"    style="enum" values="No Results|Passed|Failed" display="CSRD Test" />
+        <var name="CTtoPTU:Pri_ATO_SelfTestResult"     style="enum" values="No Results|Passed|Failed" display="ATO Test" />
+        <var name="CTtoPTU:Pri_QVM_SelfTestResult"     style="enum" values="No Results|Passed|Failed"  display="QVM Test" />
+        <var name="CTtoPTU:Pri_ATPSelfTestStatus"      style="enum" values="No Results|Passed|Failed"  display="ATP Test Status" />
+        <var name="CTtoPTU:Pri_CSRD1_HealthStatus"  display="CSRD 1 Health" />
+        <var name="CTtoPTU:Pri_CSRD2_HealthStatus"  display="CSRD 2 Health" />
+    </group>
+
+    <group name = "Secondary" location = "1,0">
+        <var name="CTtoPTU:Sec_CSRD_SelfTestResult"    style="enum" values="No Results|Passed|Failed"  display="CSRD Test" />
+        <var name="CTtoPTU:Sec_ATO_SelfTestResult"     style="enum" values="No Results|Passed|Failed"  display="ATO Test" />
+        <var name="CTtoPTU:Sec_QVM_SelfTestResult"     style="enum" values="No Results|Passed|Failed"  display="QVM Test" />
+        <var name="CTtoPTU:Sec_ATPSelfTestStatus"      style="enum" values="No Results|Passed|Failed"  display= "ATP Test Status"/>
+        <var name="CTtoPTU:Sec_CSRD1_HealthStatus"  display="CSRD 1 Health" />
+        <var name="CTtoPTU:Sec_CSRD2_HealthStatus"  display="CSRD 2 Health" />
+    </group>
+
+    <group name="SESAM" location="0,1">
+        <var name="CTtoPTU:Sesam_BISTRequest"  display="BIST Request" />
+        <var name="CTtoPTU:Sesam_BISTResult"  display="BIST Result" />
+    </group>
+  </tab>
+
+</ui>
