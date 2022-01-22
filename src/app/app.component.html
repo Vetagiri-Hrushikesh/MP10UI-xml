@@ -14,15 +14,15 @@
 
 <section class="tabs" style="-webkit-user-select: auto;">
   <menu  role="tablist" aria-label="Tabs Template" style="-webkit-user-select: auto;">
-    <button *ngFor="let i of tabList" role="tab" class="tablinks" (click)="openCity($event, i.tabId)" aria-controls="tab-A" aria-selected="false" style="-webkit-user-select: auto;">{{i.tabName}}</button>
+    <button *ngFor="let i of tabList" [attr.data-myAttribute]="i.tabId" role="tab" class="tablinks" (click)="openCity($event, i.tabId)" aria-controls="tab-A" aria-selected="false" style="-webkit-user-select: auto;">{{i.tabName}}</button>
   </menu>
     <article *ngFor="let key of Object.keys(tabIdDict)"  role="tabpanel" id={{key}} class="tabcontent" style="-webkit-user-select: auto;">
-           <div *ngFor="let group of Object.keys(tabIdDict[key])">
+        <div *ngFor="let group of Object.keys(tabIdDict[key])">
             <strong><p>{{group}}</p></strong>
             <div *ngFor="let variable of Object.keys(tabIdDict[key][group])">
             <p>{{variable}} : {{tabIdDict[key][group][variable]}}</p>
             </div>
-           </div>
+        </div>
     </article>
 </section>
 
